@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #d88681;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Demo</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/htmlDemo">HTML Demo</a>
+    </nav>
+    <section>
+        <h2>Tables</h2>
+        <table>
+            <caption>Table 1</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>College</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Meet</td>
+                    <td>Seneca</td>
+                    <td>BTT</td>
+                </tr>
+                <tr>
+                    <td>Shrey</td>
+                    <td rowspan="2">Humber</td>
+                    <td>BTT</td>
+                </tr>
+                <tr>
+                    <td>Mann</td>
+                    <td>Pharmacy</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Info regarding College and Course</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table>
+            <caption> Table 2</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Meet</td>
+                    <td>India</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Mann</td>
+                    <td>India</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Shrey</td>
+                    <td>India</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Info regarding Country and Age</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>This section demonstrates HTML tables with various elements such as <code>thead</code>, <code>tbody</code>, <code>tfoot</code>, <code>caption</code>, <code>th</code>, <code>td</code>, <code>tr</code>, and properties like <code>rowspan</code> and <code>colspan</code>.</p>
+        
+        <h2>Lists</h2>
+        <ul>
+            <li>Grocery</li>
+            <li>Fruits
+                <ol>
+                    <li>Grapes</li>
+                    <li>Watermealon</li>
+                    <li>Mango</li>
+                </ol>
+            </li>
+            <li>ToothPaste</li>
+            <li>Tea</li>
+            <li>Soap</li>
+        </ul>
+        <p>This section demonstrates an unordered list with a nested ordered list.</p>
+        
+        <h2>Images</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in halfpipe" width="300">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/June_odd-eyed-cat.jpg" alt="Odd-eyed cat" width="300">
+        <img src="data:image/jpeg;base64,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" alt="Cat" width="300">
+        <p>This section demonstrates the use of images with alt text.</p>
+        
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>This section demonstrates an HTML5 audio player.</p>
+        
+        <h2>Video</h2>
+        <video controls width="600">
+            <source src="https://www3.cde.ca.gov/download/rod/big_buck_bunny.mp4" type="video/mp4">
+            <source src="https://commons.wikimedia.org/wiki/File:Nuages-3.OGG" type="video/ogg">
+            <source src="https://test-videos.co.uk/bigbuckbunny/webm-vp9" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p>This section demonstrates an HTML5 video player.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Meet Thakkar</p>
+    </footer>
+</body>
+</html>
